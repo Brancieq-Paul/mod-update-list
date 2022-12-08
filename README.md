@@ -2,7 +2,7 @@
 
 ## Setup
 
-pip install -e requirements.txt
+pip install -r requirements.txt
 
 ./setup.py
 
