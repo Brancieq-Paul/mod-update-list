@@ -1,2 +1,17 @@
 # mod-update-list
-Script to know if mods of a modpack are available in a given version.
+
+## Setup
+
+./setup.py
+
+You need to provide your CurseForge instance path
+You need to provide you api key from https://console.curseforge.com/?#/api-keys
+
+## Usage
+
+./mod-update-list.py [list of versions]
+
+Example:
+
+./mod-update-list.py 1.19.3 Fabric
+
