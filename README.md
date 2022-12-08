@@ -2,6 +2,8 @@
 
 ## Setup
 
+pip install -e requirements.txt
+
 ./setup.py
 
 You need to provide your CurseForge instance path

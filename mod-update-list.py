@@ -2,6 +2,7 @@
 from src.CurseForgeVerif import verify_mod
 from src.InstanceFile import InstanceFile
 import sys
+import os
 
 # Get args
 args = sys.argv
@@ -20,3 +21,5 @@ InstanceFile.load_instance_files()
 # Verify if the mod exists for the given version
 for instance_file in InstanceFile.instance_files:
     verify_mod(instance_file.project_id, args)
+
+os.system("pause")
