@@ -16,9 +16,9 @@ def verify_mod(mod_id: int, versions: str):
     asked_version = any(all(version in file.version for version in versions) for file in file_list)
     if asked_version:
         # Print that the mod exists for the given version
-        print(f"Mod '{addon.name}' available")
+        print(f"Available: Mod '{addon.name}'")
         return True
     else:
         # Print that the mod does not exist for the given version
-        print(f"Mod '{addon.name}' is NOT available")
+        print(f"NOT available: Mod '{addon.name}'")
         return False
