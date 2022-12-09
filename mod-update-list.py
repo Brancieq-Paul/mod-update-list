@@ -8,7 +8,7 @@ import os
 def pause():
     plat = sys.platform
     print(f"Platform: {plat}")
-    if plat == "Windows":
+    if plat == "win32" or plat == "cygwin" or plat == "msys" or plat == "win64":
         os.system("pause")
     elif plat == "linux":
         os.system("read -p 'Press Enter to continue...' var")
