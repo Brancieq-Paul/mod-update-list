@@ -7,6 +7,7 @@ import os
 # Def pause for all systems
 def pause():
     plat = sys.platform
+    print(f"Platform: {plat}")
     if plat == "Windows":
         os.system("pause")
     elif plat == "linux":
