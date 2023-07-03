@@ -26,6 +26,8 @@ class InstanceFile:
     # Load all instance files from minecraftinstance.json
     @staticmethod
     def load_instance_files():
+        print("Instance: " + config.cf_pack_path)
+        print("Loading instance files...")
         with open(config.cf_pack_path + Paths.MINECRAFT_INSTANCE_JSON, 'r') as f:
             instance = json.load(f)
         for instance_file in instance["manifest"]["files"]:
