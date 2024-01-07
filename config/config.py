@@ -8,8 +8,7 @@ from src.const import Paths
 
 @dataclass
 class Config:
-    cf_pack_path: str
-    cf_api_key: str
+    only_display_missings: bool
 
 def load_config(config_path: str) -> Config:
     with open(config_path, 'r') as f:

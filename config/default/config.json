@@ -1,4 +1,3 @@
 {
-    "cf_pack_path": "",
-    "cf_api_key": ""
+    "only_display_missings": true
 }
